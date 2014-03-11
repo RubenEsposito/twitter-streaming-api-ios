@@ -16,8 +16,6 @@
 		6C003F3218CF90F800E883BD /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F3118CF90F800E883BD /* TSAppDelegate.m */; };
 		6C003F3518CF90F800E883BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C003F3318CF90F800E883BD /* Main.storyboard */; };
 		6C003F3818CF90F800E883BD /* TwitterStreamingiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F3618CF90F800E883BD /* TwitterStreamingiOS.xcdatamodeld */; };
-		6C003F3B18CF90F800E883BD /* TSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F3A18CF90F800E883BD /* TSMasterViewController.m */; };
-		6C003F3E18CF90F800E883BD /* TSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F3D18CF90F800E883BD /* TSDetailViewController.m */; };
 		6C003F4018CF90F800E883BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C003F3F18CF90F800E883BD /* Images.xcassets */; };
 		6C003F4718CF90F800E883BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F4618CF90F800E883BD /* XCTest.framework */; };
 		6C003F4818CF90F800E883BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F1F18CF90F800E883BD /* Foundation.framework */; };
@@ -25,6 +23,14 @@
 		6C003F4A18CF90F800E883BD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F2518CF90F800E883BD /* CoreData.framework */; };
 		6C003F5218CF90F800E883BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C003F5018CF90F800E883BD /* InfoPlist.strings */; };
 		6C003F5418CF90F800E883BD /* TwitterStreamingiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F5318CF90F800E883BD /* TwitterStreamingiOSTests.m */; };
+		6C003F6018CF992500E883BD /* TSTwitterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F5F18CF992500E883BD /* TSTwitterMap.m */; };
+		6C003F6318CF993900E883BD /* TSMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F6218CF993900E883BD /* TSMapAnnotation.m */; };
+		6C003F6518CF995500E883BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F6418CF995500E883BD /* MapKit.framework */; };
+		6C003F6718CF995C00E883BD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F6618CF995C00E883BD /* Social.framework */; };
+		6C003F6918CF996200E883BD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C003F6818CF996200E883BD /* Accounts.framework */; };
+		6C003F6D18CF99A000E883BD /* TSTwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F6C18CF99A000E883BD /* TSTwitterParser.m */; };
+		6C003F7A18CF9C0D00E883BD /* TSTwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F7918CF9C0D00E883BD /* TSTwitterManager.m */; };
+		6C003F8018CF9D2B00E883BD /* TSTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C003F7F18CF9D2B00E883BD /* TSTweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,16 +57,28 @@
 		6C003F3118CF90F800E883BD /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		6C003F3418CF90F800E883BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C003F3718CF90F800E883BD /* TwitterStreamingiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterStreamingiOS.xcdatamodel; sourceTree = "<group>"; };
-		6C003F3918CF90F800E883BD /* TSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMasterViewController.h; sourceTree = "<group>"; };
-		6C003F3A18CF90F800E883BD /* TSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMasterViewController.m; sourceTree = "<group>"; };
-		6C003F3C18CF90F800E883BD /* TSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDetailViewController.h; sourceTree = "<group>"; };
-		6C003F3D18CF90F800E883BD /* TSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDetailViewController.m; sourceTree = "<group>"; };
 		6C003F3F18CF90F800E883BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C003F4518CF90F800E883BD /* TwitterStreamingiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterStreamingiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C003F4618CF90F800E883BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6C003F4F18CF90F800E883BD /* TwitterStreamingiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterStreamingiOSTests-Info.plist"; sourceTree = "<group>"; };
 		6C003F5118CF90F800E883BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C003F5318CF90F800E883BD /* TwitterStreamingiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterStreamingiOSTests.m; sourceTree = "<group>"; };
+		6C003F5E18CF992500E883BD /* TSTwitterMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTwitterMap.h; sourceTree = "<group>"; };
+		6C003F5F18CF992500E883BD /* TSTwitterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTwitterMap.m; sourceTree = "<group>"; };
+		6C003F6118CF993900E883BD /* TSMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMapAnnotation.h; sourceTree = "<group>"; };
+		6C003F6218CF993900E883BD /* TSMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMapAnnotation.m; sourceTree = "<group>"; };
+		6C003F6418CF995500E883BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6C003F6618CF995C00E883BD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6C003F6818CF996200E883BD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6C003F6B18CF99A000E883BD /* TSTwitterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTwitterParser.h; sourceTree = "<group>"; };
+		6C003F6C18CF99A000E883BD /* TSTwitterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTwitterParser.m; sourceTree = "<group>"; };
+		6C003F6E18CF99C100E883BD /* TSTwitterParserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTwitterParserDelegate.h; sourceTree = "<group>"; };
+		6C003F7418CF9BA600E883BD /* TSTwitterManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTwitterManagerDelegate.h; sourceTree = "<group>"; };
+		6C003F7818CF9C0D00E883BD /* TSTwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTwitterManager.h; sourceTree = "<group>"; };
+		6C003F7918CF9C0D00E883BD /* TSTwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTwitterManager.m; sourceTree = "<group>"; };
+		6C003F7E18CF9D2B00E883BD /* TSTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTweet.h; sourceTree = "<group>"; };
+		6C003F7F18CF9D2B00E883BD /* TSTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTweet.m; sourceTree = "<group>"; };
+		6C003F8218CF9D7A00E883BD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C003F6918CF996200E883BD /* Accounts.framework in Frameworks */,
+				6C003F6718CF995C00E883BD /* Social.framework in Frameworks */,
+				6C003F6518CF995500E883BD /* MapKit.framework in Frameworks */,
 				6C003F2218CF90F800E883BD /* CoreGraphics.framework in Frameworks */,
 				6C003F2618CF90F800E883BD /* CoreData.framework in Frameworks */,
 				6C003F2418CF90F800E883BD /* UIKit.framework in Frameworks */,
@@ -111,6 +132,9 @@
 		6C003F1E18CF90F800E883BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C003F6818CF996200E883BD /* Accounts.framework */,
+				6C003F6618CF995C00E883BD /* Social.framework */,
+				6C003F6418CF995500E883BD /* MapKit.framework */,
 				6C003F1F18CF90F800E883BD /* Foundation.framework */,
 				6C003F2118CF90F800E883BD /* CoreGraphics.framework */,
 				6C003F2318CF90F800E883BD /* UIKit.framework */,
@@ -123,15 +147,15 @@
 		6C003F2718CF90F800E883BD /* TwitterStreamingiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6C003F6A18CF998700E883BD /* Parser */,
+				6C003F7318CF9B8400E883BD /* Manager */,
+				6C003F6F18CF9A7800E883BD /* Model */,
+				6C003F5D18CF990400E883BD /* Map */,
 				6C003F3018CF90F800E883BD /* TSAppDelegate.h */,
 				6C003F3118CF90F800E883BD /* TSAppDelegate.m */,
+				6C003F8218CF9D7A00E883BD /* Constants.h */,
 				6C003F3318CF90F800E883BD /* Main.storyboard */,
-				6C003F3918CF90F800E883BD /* TSMasterViewController.h */,
-				6C003F3A18CF90F800E883BD /* TSMasterViewController.m */,
-				6C003F3C18CF90F800E883BD /* TSDetailViewController.h */,
-				6C003F3D18CF90F800E883BD /* TSDetailViewController.m */,
 				6C003F3F18CF90F800E883BD /* Images.xcassets */,
-				6C003F3618CF90F800E883BD /* TwitterStreamingiOS.xcdatamodeld */,
 				6C003F2818CF90F800E883BD /* Supporting Files */,
 			);
 			path = TwitterStreamingiOS;
@@ -164,6 +188,47 @@
 				6C003F5018CF90F800E883BD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C003F5D18CF990400E883BD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6C003F5E18CF992500E883BD /* TSTwitterMap.h */,
+				6C003F5F18CF992500E883BD /* TSTwitterMap.m */,
+				6C003F6118CF993900E883BD /* TSMapAnnotation.h */,
+				6C003F6218CF993900E883BD /* TSMapAnnotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		6C003F6A18CF998700E883BD /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6C003F6B18CF99A000E883BD /* TSTwitterParser.h */,
+				6C003F6C18CF99A000E883BD /* TSTwitterParser.m */,
+				6C003F6E18CF99C100E883BD /* TSTwitterParserDelegate.h */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		6C003F6F18CF9A7800E883BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C003F3618CF90F800E883BD /* TwitterStreamingiOS.xcdatamodeld */,
+				6C003F7E18CF9D2B00E883BD /* TSTweet.h */,
+				6C003F7F18CF9D2B00E883BD /* TSTweet.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6C003F7318CF9B8400E883BD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C003F7818CF9C0D00E883BD /* TSTwitterManager.h */,
+				6C003F7918CF9C0D00E883BD /* TSTwitterManager.m */,
+				6C003F7418CF9BA600E883BD /* TSTwitterManagerDelegate.h */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C003F3818CF90F800E883BD /* TwitterStreamingiOS.xcdatamodeld in Sources */,
-				6C003F3E18CF90F800E883BD /* TSDetailViewController.m in Sources */,
-				6C003F3B18CF90F800E883BD /* TSMasterViewController.m in Sources */,
+				6C003F6D18CF99A000E883BD /* TSTwitterParser.m in Sources */,
+				6C003F7A18CF9C0D00E883BD /* TSTwitterManager.m in Sources */,
+				6C003F6318CF993900E883BD /* TSMapAnnotation.m in Sources */,
+				6C003F8018CF9D2B00E883BD /* TSTweet.m in Sources */,
+				6C003F6018CF992500E883BD /* TSTwitterMap.m in Sources */,
 				6C003F2E18CF90F800E883BD /* main.m in Sources */,
 				6C003F3218CF90F800E883BD /* TSAppDelegate.m in Sources */,
 			);

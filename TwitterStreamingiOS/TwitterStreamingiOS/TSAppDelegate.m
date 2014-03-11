@@ -8,7 +8,8 @@
 
 #import "TSAppDelegate.h"
 
-#import "TSMasterViewController.h"
+#import "TSTwitterManager.h"
+#import "TSTwitterMap.h"
 
 @implementation TSAppDelegate
 
@@ -18,10 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    TSMasterViewController *controller = (TSMasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    // Retrieve the map controller from the Storyboard
+    TSTwitterMap *map = (TSTwitterMap *)self.window.rootViewController;
+    
+    // Create the manager and set the map as its delegate
+    TSTwitterManager *manager = [[TSTwitterManager alloc] init];
+    manager.delegate = map;
+    manager.managedObjectContext = self.managedObjectContext;
+    [manager initManager];
     return YES;
 }
 							
